@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PractiseTopMenu</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+        <string name="map_api_key">AIzaSyCcrp3Em_0Wag0VfO-ZTOoj4V0Xz1qj95Y</string>
+    
+
+</resources>

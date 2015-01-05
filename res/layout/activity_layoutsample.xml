@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<net.simonvt.menudrawer.TopDrawer xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:mdMenuSize="64dp">
+
+    
+
+    <LinearLayout
+        android:id="@id/mdMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/item1"
+            
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onDrawerItemClick"
+            android:tag="Item no. 1"
+            android:text="Item 1" />
+
+        <TextView
+            android:id="@+id/item2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onDrawerItemClick"
+            android:tag="Item no. 2"
+            android:text="Item 2" />
+
+    </LinearLayout>
+
+    <FrameLayout xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="100"
+        tools:context=".TopMain">
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation = "vertical">
+        
+        <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+         
+        
+     
+    </LinearLayout>
+    
+     <Button 
+             android:layout_width="wrap_content"
+                        android:padding="3dp"
+                        
+                        
+                        android:textColor="#fdfdfd"
+                        android:layout_height="45dp"
+                        android:layout_marginRight="5dp"
+                        android:text="Book now"
+                        android:layout_weight="1" />
+    </FrameLayout>
+    
+    
+            
+
+           
+
+   
+</net.simonvt.menudrawer.TopDrawer>
